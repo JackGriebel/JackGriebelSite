@@ -1,33 +1,90 @@
+<!-- this is a WIP for now -->
 <head>
-  <title>Jack Griebel</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <title>Jack Griebel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-<h2>Jack Griebel</h1>
-<h3>Projects</h4>
-<h4><a href="https://jackgriebel.github.io/evoDots/"><u>EvoDots</u></a></h4>
-<h4><a href="https://codepen.io/JackGriebel/full/WJoaYO/"><u>News Summarizer</u></a></h4>
-<h4><a href="https://codepen.io/JackGriebel/full/ZBbRaz/"><u>Christmas Music Radio</u></a></h4>
-<h4><a href="https://codepen.io/JackGriebel/full/odQxWX"><u>Space Flyer Demo</u></a></h4>
-<h4><a href="https://codepen.io/JackGriebel/full/xgeMPM/"><u>Percent Error Calculator</u></a></h4>
-<h4><a href="https://codepen.io/JackGriebel/full/amazBw/"><u>Cryptocurrency Popularity Viewer</u></a></h4>
-<h4><a href="https://codepen.io/JackGriebel/full/XNrejz/"><u>PC Partlist Generator</u></a></h4>
-<h4><a href="https://codepen.io/JackGriebel/full/YpmYXb"><u>Color Change Demo</u></a></h4>
-<h4><a href="https://codepen.io/JackGriebel/full/qjNwjB/"><u>Quote Machine</u></a></h4>
+<div class="has-text-centered" id="splashDiv">
+    <h1 class="">Jack Griebel</h1>
+    <div>
+        <p><i>Portfolio Below</i></p>
+      <!--<i class="fas fa-arrow-down fa-4x icon-border" id="downArrow" onclick="scrollProjects()"></i>-->
+    </div>
+</div>
 
+
+<div class="row" id="projects">
+    <div class="col-lg-4 projectLink">
+
+<h3><button class="btn btn-outline-light" onclick="location.href = 'https://jackgriebel.github.io/evoDots/';">EvoDots</button></h3>
+    </div>
+
+    <div class="col-lg-4 projectLink">
+<h3><button class="btn btn-outline-light" onclick="location.href = 'https://codepen.io/JackGriebel/full/WJoaYO/';">News Summarizer</button></h3>
+    </div>
+
+    <div class="col-lg-4 projectLink">
+<h3><button class="btn btn-outline-light" href="https://codepen.io/JackGriebel/full/ZBbRaz/" onclick="location.href = 'https://codepen.io/JackGriebel/full/WJoaYO/';">Christmas Music Radio</button></h3>
+    </div>
+
+
+
+    <div class="col-lg-4 projectLink">
+<h3><button class="btn btn-outline-light" onclick="location.href = 'https://codepen.io/JackGriebel/full/odQxWX/';">Space Flyer Demo</button></h3>
+    </div>
+
+    <div class="col-lg-4 projectLink">
+<h3><button class="btn btn-outline-light" onclick="location.href = 'https://codepen.io/JackGriebel/full/xgeMPM/';">Percent Error Calculator</button></h3>
+    </div>
+
+    <div class="col-lg-4 projectLink">
+<h3><button class="btn btn-outline-light" onclick="location.href = 'https://codepen.io/JackGriebel/full/amazBw/';">Cryptocurrency Popularity Viewer</button></h3>
+    </div>
+
+
+    <div class="col-lg-4 projectLink">
+<h3><button class="btn btn-outline-light" onclick="location.href = 'https://codepen.io/JackGriebel/full/XNrejz/';">PC Partlist Generator</button></h3>
+    </div>
+
+    <div class="col-lg-4 projectLink">
+<h3><button class="btn btn-outline-light" onclick="location.href = 'https://codepen.io/JackGriebel/full/YpmYXb';">Color Change Demo</button></h3>
+    </div>
+
+    <div class="col-lg-4 projectLink">
+<h3><button class="btn btn-outline-light" onclick="location.href = 'https://codepen.io/JackGriebel/full/qjNwjB/';">Quote Machine</button></h3>
+    </div>
+</div>
 
 </body>
 
 <style>
-body {
-	padding: 10px;
-	background-color: #004d40;
-	color: white;
-}
-a {
-	color: #16a0e5;
-}
+    .projectLink {
+        text-align: center;
+    }
+
+    #splashDiv {
+        padding-top: 5%;
+        text-align: center;
+    }
+
+    body {
+        padding: 10px;
+        background: linear-gradient(to bottom right, #6450E6, #37F7AB);
+        color: white;
+        height: 100%;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
 </style>
 
 <script>
+    function scrollProjects() {
+        $('html, body').animate({
+            scrollTop: $("#projects").offset().top
+        }, 500);
+    }
 </script>
