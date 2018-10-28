@@ -1,105 +1,132 @@
-<!-- this is a WIP for now -->
+<!DOCTYPE html>
+<html>
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119560158-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-119560158-2');
-  </script>
-  <title>Jack Griebel</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Jack Griebel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.1/css/materialize.css">
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-<div class="has-text-centered" id="splashDiv">
-    <h1>Jack Griebel</h1>
-    <br>
-      <!--<i class="fas fa-arrow-down fa-4x icon-border" id="downArrow" onclick="scrollProjects()"></i>-->
+
+<div class="view" id="iframe-holder"><iframe class="web-view" src="http://www.antiquity.host/"></iframe></div>
+
+<div class="collection with-header nav">
+        <div class="collection">
+            <a href="#!" class="collection-item news-viewer">
+                <h3>Jack Griebel</h3>
+                <h6 class="news-viewer">Currently I am a senior at Webster Thomas High School. Hover over any of the project names to view a description, click on any to view them. </h6>
+            </a>
+            <a href="#!" class="collection-item news-viewer" id="http://www.antiquity.host/" onclick="expand(this.id)">
+                <h5>World History Timeline</h5>
+                <p class="news-viewer description">Use a slider to navigate through world history and view important events</p>
+            </a>
+
+            <a href="#!" class="collection-item news-viewer" id="http://jsfiddle.net/n012dwx5/embedded/result" onclick="expand(this.id)">
+                <h5>News Summarizer</h5>
+                <p class="news-viewer description">View news articles and summaries of them. Click an article to be brought to its source</p>
+            </a>
+
+            <a href="#!" class="collection-item news-viewer" id="https://jackgriebel.github.io/spaceflyerdemo/" onclick="expand(this.id)">
+                <h5>Space Flyer</h5>
+                <p class="news-viewer description">Fly a simple spaceship through space. Use WASD to move and Space to warp</p>
+            </a>
+
+            <a href="#!" class="collection-item news-viewer" id="https://jackgriebel.github.io/quotemachine/" onclick="expand(this.id)">
+                <h5>Quote Machine</h5>
+                <p class="news-viewer description">Give quotes from various 20th century Russian Revolutionaries</p>
+            </a>
+
+            <a href="#!" class="collection-item news-viewer" id="https://jackgriebel.github.io/evoDots/" onclick="expand(this.id)">
+                <h5>Evo Dots</h5>
+                <p class="news-viewer description">Model evolution from an interactive survival of the fittest viewpoint</p>
+            </a>
+
+            <a href="#!" class="collection-item news-viewer" id="https://jackgriebel.github.io/christmas-music-radio/" onclick="expand(this.id)">
+
+                <h5>Christmas Music Radio</h5>
+                <p class="news-viewer description">Listen to a selection of christmas songs with an integrated shuffler</p>
+            </a>
+
+            <a href="#!" class="collection-item news-viewer" id="https://jackgriebel.github.io/cryptocurrency-popularity/" onclick="expand(this.id)">
+                <h5>Cryptocurrency Popularity</h5>
+                <p class="news-viewer description">View the popularity of selected cryptocurrencies via Google Trends data</p>
+            </a>
+
+            <a href="#!" class="collection-item news-viewer" id="https://jackgriebel.github.io/weather-app/" onclick="window.open(this.id)">
+
+                <h5>Weather App</h5>
+                <p class="news-viewer description">View weather and a map of the local area (opens in a new tab)</p>
+            </a>
+
+        </div>
+
 </div>
 
-
-<div class="row" id="projects">
-    <div class="col-lg-4 projectLink">
-
-<h3><button class="btn btn-outline-light" onclick="location.href = 'https://jackgriebel.github.io/evoDots/';">EvoDots</button></h3>
-    </div>
-
-    <div class="col-lg-4 projectLink">
-<h3><button class="btn btn-outline-light" onclick="location.href = 'https://codepen.io/JackGriebel/full/WJoaYO/';">News Summarizer</button></h3>
-    </div>
-
-    <div class="col-lg-4 projectLink">
-<h3><button class="btn btn-outline-light" href="https://codepen.io/JackGriebel/full/ZBbRaz/" onclick="location.href = 'https://codepen.io/JackGriebel/full/ZBbRaz/';">Christmas Music Radio</button></h3>
-    </div>
-
-
-
-    <div class="col-lg-4 projectLink">
-<h3><button class="btn btn-outline-light" onclick="location.href = 'https://jackgriebel.github.io/spaceflyerdemo/';">Space Flyer Demo</button></h3>
-    </div>
-
-    <div class="col-lg-4 projectLink">
-<h3><button class="btn btn-outline-light" onclick="location.href = 'https://jackgriebel.github.io/percent-error-calculator/';">Percent Error Calculator</button></h3>
-    </div>
-
-    <div class="col-lg-4 projectLink">
-<h3><button class="btn btn-outline-light" onclick="location.href = 'https://jackgriebel.github.io/cryptocurrency-popularity/';">Cryptocurrency Popularity Viewer</button></h3>
-    </div>
-
-
-    <div class="col-lg-4 projectLink">
-<h3><button class="btn btn-outline-light" onclick="location.href = 'https://jackgriebel.github.io/weather-app/';">Weather App</button></h3>
-    </div>
-
-    <div class="col-lg-4 projectLink">
-<h3><button class="btn btn-outline-light" onclick="location.href = 'https://jackgriebel.github.io/colorChanger/';">Color Change Demo</button></h3>
-    </div>
-
-    <div class="col-lg-4 projectLink">
-<h3><button class="btn btn-outline-light" onclick="location.href = 'https://jackgriebel.github.io/quotemachine/';">Quote Machine</button></h3>
-    </div>
-    <div class="col-lg-4 projectLink">
-        <!-- open spot -->
-    </div>
-    <div class="col-lg-4 projectLink">
-<h3><button class="btn btn-outline-light" onclick="location.href = 'http://www.antiquity.host';">World History Explorer</button></h3>
-    </div>
-    <div class="col-lg-4 projectLink">
-        <!-- open spot -->
-    </div>
-</div>
 </body>
 
+
 <style>
-    .projectLink {
-        text-align: center;
-    }
+body {
+    background: white;
+}
 
-    #splashDiv {
-        padding-top: 5%;
-        text-align: center;
-    }
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
 
-    body {
-        padding: 10px;
-        background: linear-gradient(to bottom right, #6450E6, #37F7AB);
-        color: white;
-        height: 100%;
-        margin: 0;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
+html,body {
+    height:100%;
+}
 
+.web-view {
+    width: 100%;
+    height: 100%;
+}
+
+.collection-item {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.collection-item:hover {
+    padding: 20px;
+    border-radius: 15px;
+    display: initial;
+}
+
+.news-viewer:hover .description {
+    display: initial;
+}
+
+.description {
+    display: none;
+}
+
+.nav {
+    position: absolute;
+    top: 0px;
+    padding-top: 0;
+    width: 20%;
+    float: left;
+    background: white;
+}
+.view {
+    float: right;
+    width: 80%;
+    height: 100%;
+}
 </style>
 
 <script>
-    function scrollProjects() {
-        $('html, body').animate({
-            scrollTop: $("#projects").offset().top
-        }, 500);
+
+    function expand(url) {
+        document.getElementById("iframe-holder").innerHTML = "<iframe class=\"web-view\" src=\"" + url + "\"></iframe>";
     }
+
 </script>
+</html>
