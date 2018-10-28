@@ -3,8 +3,6 @@
 <head>
     <title>Jack Griebel</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.1/css/materialize.css">
-    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -12,9 +10,9 @@
 
 <div class="collection with-header nav">
         <div class="collection">
-            <a href="#!" class="collection-item news-viewer">
+            <a href="#!" class="collection-item news-viewer" id="https://github.com/JackGriebel" onclick="window.open(this.id)">
                 <h3>Jack Griebel</h3>
-                <h6 class="news-viewer">Currently I am a senior at Webster Thomas High School. Hover over any of the project names to view a description, click on any to view them. </h6>
+                <h6 class="news-viewer">Currently I am a senior at Webster Thomas High School. Hover over any of the project names to view a description, click on any to view them.</h6>
             </a>
             <a href="#!" class="collection-item news-viewer" id="http://www.antiquity.host/" onclick="expand(this.id)">
                 <h5>World History Timeline</h5>
@@ -52,6 +50,12 @@
                 <p class="news-viewer description">View the popularity of selected cryptocurrencies via Google Trends data</p>
             </a>
 
+            <a href="#!" class="collection-item news-viewer" id="https://github.com/JackGriebel/markov-chain-analysis/" onclick="window.open(this.id)">
+
+                <h5>Python Markov Chain Analysis</h5>
+                <p class="news-viewer description">Predictive text analysis using python (opens in a new tab)</p>
+            </a>
+
             <a href="#!" class="collection-item news-viewer" id="https://jackgriebel.github.io/weather-app/" onclick="window.open(this.id)">
 
                 <h5>Weather App</h5>
@@ -75,8 +79,8 @@ html {
     overflow-x: hidden;
 }
 ::-webkit-scrollbar {
-    width: 0px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
+    width: 0px;
+    background: transparent;
 }
 
 html,body {
@@ -127,6 +131,8 @@ html,body {
     function expand(url) {
         document.getElementById("iframe-holder").innerHTML = "<iframe class=\"web-view\" src=\"" + url + "\"></iframe>";
     }
+
+
 
 </script>
 </html>
