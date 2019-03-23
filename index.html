@@ -3,6 +3,7 @@
 <head>
     <title>Jack Griebel</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.1/css/materialize.css">
+    <link rel="stylesheet" href="https://www.jackgriebel.com/stylesheet.css">
 </head>
 <body>
 
@@ -114,71 +115,11 @@
 
 </body>
 
-
-<style>
-body {
-    background: white;
-}
-
-html {
-    overflow: scroll;
-    overflow-x: hidden;
-}
-::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
-}
-
-html,body {
-    height:100%;
-}
-
-.web-view {
-    width: 100%;
-    height: 100%;
-}
-
-.collection-item {
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.collection-item:hover {
-    padding: 20px;
-    border-radius: 15px;
-    display: initial;
-}
-
-.news-viewer:hover .description {
-    display: initial;
-}
-
-.description {
-    display: none;
-}
-
-.nav {
-    position: absolute;
-    top: 0px;
-    padding-top: 0;
-    width: 20%;
-    float: left;
-    background: white;
-}
-.view {
-    float: right;
-    width: 80%;
-    height: 100%;
-}
-</style>
-
 <script>
 
     function expand(url) {
         document.getElementById("iframe-holder").innerHTML = "<iframe class=\"web-view\" src=\"" + url + "\"></iframe>";
     }
-
-
 
 </script>
 </html>
