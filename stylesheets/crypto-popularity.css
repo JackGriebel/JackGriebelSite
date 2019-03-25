@@ -1,0 +1,35 @@
+body {
+	font-family: 'Catamaran', sans-serif;
+	background-image: url(https://stockmarketvideo.com/wp-content/uploads/2016/03/dow-jones.jpg);
+	height: 250px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-border: 234, 234, 234 1px;
+	border-style: solid;
+	border-left: 0;
+	border-right: 0;
+	oppacity: 0.5;
+  padding: 1em;
+}
+
+p {
+	color: black;
+}
+
+p span {
+	background-color: white;
+	border-radius: 5px;
+}
+
+.padding {
+	padding-top: 10px;
+	padding-bottom: 15px
+}
+
+h1 span {
+	color: white;
+}
