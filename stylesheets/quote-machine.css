@@ -1,0 +1,19 @@
+body {
+    background-color: #00375e;
+	  color: white;
+	  margin-top: 10%;
+	  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#vertical{
+    margin-top: 200px;
+}
+
+h1, h2 {
+	margin-left: 50px;
+}
+
+#go {
+	position: absolute;
+	margin-left: 50px;
+}
