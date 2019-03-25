@@ -1,0 +1,38 @@
+body {
+     background-image: url("https://images7.alphacoders.com/335/335893.jpg");
+     background-size: 1920px 1080px;
+     color: white;
+}
+
+h1 {
+     text-align: center;
+     font-family: 'PT Sans', sans-serif;
+}
+
+#song {
+     padding-top: 50px;
+     padding-left: 50px;
+     padding-right: 50px;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+}
+
+.btn-xlarge {
+     padding: 36px 60px;
+     font-size: 150px;
+     line-height: normal;
+     -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+     border-radius: 100%;
+}
+
+.btn:focus, .btn:active {
+     outline: none;
+}
+
+.music {
+     width: 0px;
+     height: 0px;
+}
